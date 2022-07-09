@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Anmai - Contacto</title>
+</head>
+
+<body>
+
+    <header class="header" id="encabezado">
+        <div class="header__logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./amigurumis.html">Amigurumis</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section--contacto">
+        <h1 class="section__titulo--contacto">Contacto</h1>
+
+        <!-- Formulario para contacto -->
+        <article class="article--contacto">
+            <form class="form" action="">
+                <fieldset>
+                    <legend class="form__titulo"><h3>Datos de contacto</h3></legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre" required>
+                    <br>
+                    <br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresar apellido" required>
+                    <br>
+                    <br>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingresar mail" required>
+                    <br>
+                    <br>
+            
+                    <label for="talle">Sexo</label>
+                    <br>
+                    <select name="talle" id="talle">
+                        <option value=""> Seleccioná tu sexo</option>
+                        <option value="f">Femenino</option>
+                        <option value="m">Masculino</option>
+                        <option value="n">Prefiero no decirlo</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <label for="talle">Edad</label>
+                    <br>
+                    <select name="talle" id="talle">
+                    <option value="">Seleccioná tu edad</option>
+                    <option value="">Menor de 18 años</option>
+                    <option value="">Entre 19 y 40 años</option>
+                    <option value="">Mayor de 41 años</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="articulos">Artículos de su interés</label>
+                    <br>
+                    <input type="checkbox" name="cbox1"> Amigurumis
+                    <input type="checkbox" name="cbox2"> Deco y hogar
+                    <input type="checkbox" name="cbox3"> Bebés y niños
+                    <input type="checkbox" name="cbox3"> Adultos
+                    <br>
+                    <br>
+                    <label for="experiencia">¿Tiene experiencia tejiendo a crochet?</label>
+                    <br>
+                    <input type="radio" name="experiencia"> Avanzada
+                    <input type="radio" name="experiencia"> Básica
+                    <input type="radio" name="experiencia"> Ninguna
+                    <br>
+                    <br>
+                    <label for="consultas">Consultas</label>
+                    <br>
+                    <textarea name="consultas" id="consultas" cols="40" rows="10" maxlength="10"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar formulario">
+                </fieldset>    
+            </form>
+        </article>
+    </section>
+
+    <hr>
+    <footer class="footer">
+        <ul>
+            <li><a class="footer__navbar" href="./index.html">Home</a></li>
+            <li><a class="footer__navbar" href="./amigurumis.html">Amigurumis</a></li>
+            <li><a class="footer__navbar" href="./galeria.html">Galería</a></li>
+            <li><a class="footer__navbar" href="./nosotros.html">Nosotros</a></li>
+            <li><a class="footer__navbar" href="./contacto.html">Contacto</a></li>
+        </ul>
+
+        <a class="footer__volver" href="#encabezado">Volver arriba</a>
+        <p class="footer__derechos">Junio de 2022 - © Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
