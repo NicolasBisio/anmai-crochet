@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.png">
+    <!-- Para agregar iconos de FontAwesome -->
+    <script src="https://kit.fontawesome.com/dddbd503a2.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     <title>Anmai - Amigurumis</title>
 </head>
@@ -15,18 +18,50 @@
 <body>
 
     <header class="header" id="encabezado">
-        <div class="header__logo">
-            <a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
-        </div>
 
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./amigurumis.html">Amigurumis</a></li>
-                <li><a href="./galeria.html">Galería</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar__color">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar__logo" href="./index.html"><img src="./img/logo.png" alt="logoAnmai"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="header__nav--a active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__nav--a" href="./amigurumis.html">Amigurumis</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="header__nav--a dropdown-toggle" href="./galeria.html" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Galería
+                            </a>
+                            <ul class="dropdown-menu navbar__desplegable" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./galeria.html">Galería</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Amigurumis</a></li>
+                                <li><a class="dropdown-item" href="#">Bebés y niños</a></li>
+                                <li><a class="dropdown-item" href="#">Deco</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__nav--a" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__nav--a" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -48,9 +83,8 @@
         </article>
     </section>
 
-    <hr>
     <footer class="footer">
-        <ul>
+        <ul class="footer__items">
             <li><a class="footer__navbar" href="./index.html">Home</a></li>
             <li><a class="footer__navbar" href="./amigurumis.html">Amigurumis</a></li>
             <li><a class="footer__navbar" href="./galeria.html">Galería</a></li>
@@ -58,12 +92,25 @@
             <li><a class="footer__navbar" href="./contacto.html">Contacto</a></li>
         </ul>
 
+        <ul class="mt-4 list-unstyled">
+            <li><a href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li><a href="">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+            </li>
+        </ul>
+
         <a class="footer__volver" href="#encabezado">Volver arriba</a>
         <p class="footer__derechos">Junio de 2022 - © Todos los derechos reservados</p>
     </footer>
-    
+
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

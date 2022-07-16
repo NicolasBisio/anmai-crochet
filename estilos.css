@@ -47,11 +47,15 @@ img {
     gap: 2.1rem;
 }
 
-.header__logo {
-    max-width: 100px;
+.navbar__logo{
+    padding-right: 8rem;
 }
 
-.header__nav a {
+.navbar__color{
+    background-color: #e9b5b5;
+}
+
+.header__nav--a {
     font-size: 1rem;
     font-weight: 550;
     padding: 0.4rem;
@@ -59,15 +63,23 @@ img {
     color: #743232;
 }
 
+.navbar__desplegable{
+    background-color:#ffe9e9;
+}
+
 /* ------------------ MAIN ------------------ */
 
-.container {
+.container{
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffe9e9;
     grid-area: main;
 }
 
+.home__titulo{
+    text-align: center;
+    padding: 1.5rem 0;
+}
 
 .galeria__titulo {
     display: flex;
@@ -80,6 +92,32 @@ img {
     display: flex;
     justify-content: center;
 
+}
+
+#maingallery{
+    padding: 0;
+}
+
+.galeria__boton{
+    background-color: #db8585;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    border-color: none;
+}
+
+.galeria__boton--pregunta{
+    font-size: 2rem;
+}
+
+.galeria__boton--texto{
+    background-color: #ffdada;
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
 
@@ -122,6 +160,33 @@ img {
     grid-column: 9 / 13;
 }
 
+/* Tríptico Home */
+
+.home__triptico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+    justify-content: center;
+    padding: 0.5rem 3rem;
+}
+
+.home__triptico--titulo {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.home__triptico--imagen {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 clamp(300px, 30%, 400px)
+}
+
+.home__triptico--info {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+}
+
 
 /* Zócalo Sets */
 
@@ -135,7 +200,7 @@ img {
 
 .galeria__sets--titulo {
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 
 .galeria__sets--imagen {
@@ -163,6 +228,10 @@ img {
     grid-area: footer;
 }
 
+.footer__items{
+    display: flex;
+}
+
 .footer li {
     display: inline-block;
     padding: 0.4rem;
@@ -174,6 +243,20 @@ img {
     color: #ffe9e9;
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.fa-facebook-f{
+    font-size: 1.5rem;
+    color: #ffe9e9;
+}
+
+.fa-instagram-square{
+    font-size: 1.5rem;
+    color: #ffe9e9;
+}
+
+.mt-4{
+    margin: 0;
 }
 
 .footer__volver {
@@ -215,7 +298,7 @@ img {
 
 @media screen and (max-width: 676px) {
     .footer__navbar {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .footer__volver {
@@ -229,6 +312,13 @@ img {
 }
 
 @media screen and (max-width: 589px) {
+    .footer__items{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 0;
+    }
+
     .galeria__grilla--img:nth-of-type(1) {
         grid-column: 1 / 7;
     }
