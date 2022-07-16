@@ -1,3 +1,5 @@
+@import "variables";
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #432700;
     /*     background-image: url(./img/corazoneshome.png); */
-    background-color: #ffeded;
+    background-color: #ffdfdf;
     display: grid;
     grid-template-areas:
         " header "
@@ -37,7 +39,8 @@ img {
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    background-color: #e9b5b5;
+    background-color: #ffdfdf;
+    background: radial-gradient(circle, #ffdfdf 75%, #ffbdbd 100%);
     grid-area: header;
 }
 
@@ -47,12 +50,12 @@ img {
     gap: 2.1rem;
 }
 
-.navbar__logo{
+.navbar__logo {
     padding-right: 8rem;
 }
 
-.navbar__color{
-    background-color: #e9b5b5;
+.navbar__color {
+    background-color: none;
 }
 
 .header__nav--a {
@@ -60,23 +63,27 @@ img {
     font-weight: 550;
     padding: 0.4rem;
     text-transform: uppercase;
-    color: #743232;
+    color: #8c4a4a;
 }
 
-.navbar__desplegable{
-    background-color:#ffe9e9;
+.header__nav--a:hover {
+    color: #562424;
+}
+
+.navbar__desplegable {
+    background-color: #ffe9e9;
 }
 
 /* ------------------ MAIN ------------------ */
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffe9e9;
     grid-area: main;
 }
 
-.home__titulo{
+.home__titulo {
     text-align: center;
     padding: 1.5rem 0;
 }
@@ -94,11 +101,11 @@ img {
 
 }
 
-#maingallery{
+#maingallery {
     padding: 0;
 }
 
-.galeria__boton{
+.galeria__boton {
     background-color: #db8585;
     align-items: center;
     text-align: center;
@@ -108,11 +115,11 @@ img {
     border-color: none;
 }
 
-.galeria__boton--pregunta{
+.galeria__boton--pregunta {
     font-size: 2rem;
 }
 
-.galeria__boton--texto{
+.galeria__boton--texto {
     background-color: #ffdada;
     border: none;
     font-size: 1.5rem;
@@ -228,13 +235,17 @@ img {
     grid-area: footer;
 }
 
-.footer__items{
+.footer__items {
     display: flex;
 }
 
 .footer li {
     display: inline-block;
     padding: 0.4rem;
+}
+
+.footer a:hover {
+    color: #ffd4d4;
 }
 
 .footer__navbar {
@@ -245,17 +256,25 @@ img {
     font-weight: 700;
 }
 
-.fa-facebook-f{
+.fa-facebook-f {
     font-size: 1.5rem;
     color: #ffe9e9;
 }
 
-.fa-instagram-square{
+.fa-facebook-f:hover {
+    color: #ffd4d4;
+}
+
+.fa-instagram-square {
     font-size: 1.5rem;
     color: #ffe9e9;
 }
 
-.mt-4{
+.fa-instagram-square:hover {
+    color: #ffd4d4;
+}
+
+.mt-4 {
     margin: 0;
 }
 
@@ -312,7 +331,7 @@ img {
 }
 
 @media screen and (max-width: 589px) {
-    .footer__items{
+    .footer__items {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -344,4 +363,3 @@ img {
     }
 
 }
-
