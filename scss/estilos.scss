@@ -58,10 +58,24 @@ img {
     background-color: none;
 }
 
+.navbar-nav{
+    gap:1rem;
+}
+
+.nav-item {
+    /* border-bottom:#db8585 solid 4px; */
+    
+}
+
+.nav-item:hover{
+    transition: 0.2s;
+    border-bottom:#db8585 solid 4px ;
+    border-width: auto;
+}
+
 .header__nav--a {
     font-size: 1rem;
     font-weight: 550;
-    padding: 0.4rem;
     text-transform: uppercase;
     color: #8c4a4a;
 }
@@ -76,17 +90,54 @@ img {
 
 /* ------------------ MAIN ------------------ */
 
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffe9e9;
     grid-area: main;
-}
+    padding-bottom: 3rem;
+} */
 
 .home__titulo {
     text-align: center;
     padding: 1.5rem 0;
 }
+
+/* Tríptico Home */
+
+.home__triptico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+    justify-content: center;
+    padding: 0.5rem 3rem;
+}
+
+.home__triptico--titulo {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.home__triptico--card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 clamp(300px, 30%, 400px)
+}
+
+.home__triptico--imagen {
+    padding: 1rem;
+}
+
+.home__triptico--imagen:hover {
+    padding: 0.5rem;
+}
+
+.home__triptico--info {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+}
+
 
 .galeria__titulo {
     display: flex;
@@ -113,6 +164,10 @@ img {
     margin-top: 3rem;
     margin-bottom: 0;
     border-color: none;
+}
+
+.btn {
+    --bs-btn-border-width: 0px;
 }
 
 .galeria__boton--pregunta {
@@ -167,40 +222,17 @@ img {
     grid-column: 9 / 13;
 }
 
-/* Tríptico Home */
-
-.home__triptico {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.7rem;
-    justify-content: center;
-    padding: 0.5rem 3rem;
-}
-
-.home__triptico--titulo {
-    text-align: center;
-    margin-top: 2.5rem;
-}
-
-.home__triptico--imagen {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 clamp(300px, 30%, 400px)
-}
-
-.home__triptico--info {
-    display: flex;
-    flex-direction: column;
-    padding: 0.8rem;
+.galeria__grilla--img:hover {
+    padding: 0.1rem;
 }
 
 
-/* Zócalo Sets */
+/* Zócalo Sets Galería */
 
 .galeria__sets {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.7rem;
+    gap: 3rem;
     justify-content: center;
     padding: 0.5rem 3rem;
 }
@@ -210,18 +242,25 @@ img {
     margin-top: 2rem;
 }
 
-.galeria__sets--imagen {
+.galeria__sets--card {
     display: flex;
     flex-direction: column;
     flex: 1 1 clamp(300px, 30%, 400px)
 }
 
+.galeria__sets--imagen {
+    padding: 1rem;
+}
+
+.galeria__sets--imagen:hover {
+    padding: 0.5rem;
+}
+
 .galeria__sets--info {
     display: flex;
     flex-direction: column;
-    padding: 0.8rem;
+    padding: 2rem;
 }
-
 
 /* FOOTER */
 
