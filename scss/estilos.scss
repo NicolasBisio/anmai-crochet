@@ -32,11 +32,16 @@ img {
     width: 100%;
 }
 
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* --------------- HEADER ---------------- */
 
 .header {
-    display: flex;
-    justify-content: center;
+    @include flexcenter;
     align-items: center;
     padding: 1rem 0;
     background-color: #ffdfdf;
@@ -106,10 +111,9 @@ img {
     }
 
     &__triptico {
-        display: flex;
+        @include flexcenter;
         flex-wrap: wrap;
         gap: 1.7rem;
-        justify-content: center;
         padding: 0.5rem 3rem;
 
         &--titulo {
@@ -144,15 +148,13 @@ img {
 
 .galeria {
     &__titulo {
-        display: flex;
+        @include flexcenter;
         margin-top: 2.5rem;
         padding: 1rem;
-        justify-content: center;
     }
 
     &__intro {
-        display: flex;
-        justify-content: center;
+        @include flexcenter;
     }
 
     &__boton {
@@ -183,6 +185,7 @@ img {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 1rem;
+
 
         &--img:nth-of-type(1) {
             grid-column: 1 / 5;
@@ -221,10 +224,9 @@ img {
 
 
     &__sets {
-        display: flex;
+        @include flexcenter;
         flex-wrap: wrap;
         gap: 3rem;
-        justify-content: center;
         padding: 0.5rem 3rem;
 
         &--titulo {
@@ -242,7 +244,7 @@ img {
             padding: 1rem;
 
             &:hover {
-                padding: 0.5rem;
+                padding: 0.9rem;
             }
         }
 
@@ -338,9 +340,21 @@ img {
     margin: 0;
 }
 
-@media screen and (max-width: 990px) {
-    .galeria__grilla {
-        padding: 1rem;
+@media screen and (max-width: 992px) {
+    .galeria {
+        &__grilla {
+            padding: 2rem 4rem;
+        }
+
+        &__sets--info {
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__sets--texto {
+            text-align: center;
+        }
+
     }
 
     .header__menu {
@@ -379,7 +393,7 @@ img {
 }
 
 
-@media screen and (max-width: 589px) {
+@media screen and (max-width: 576px) {
     .footer__items {
         flex-direction: column;
         align-items: center;

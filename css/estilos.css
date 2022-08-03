@@ -73,9 +73,9 @@ img {
 
 .home__triptico {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.7rem;
-  justify-content: center;
   padding: 0.5rem 3rem; }
   .home__triptico--titulo {
     text-align: center;
@@ -95,9 +95,9 @@ img {
 
 .galeria__titulo {
   display: flex;
+  justify-content: center;
   margin-top: 2.5rem;
-  padding: 1rem;
-  justify-content: center; }
+  padding: 1rem; }
 
 .galeria__intro {
   display: flex;
@@ -146,9 +146,9 @@ img {
 
 .galeria__sets {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-  justify-content: center;
   padding: 0.5rem 3rem; }
   .galeria__sets--titulo {
     text-align: center;
@@ -160,7 +160,7 @@ img {
   .galeria__sets--imagen {
     padding: 1rem; }
     .galeria__sets--imagen:hover {
-      padding: 0.5rem; }
+      padding: 0.9rem; }
   .galeria__sets--info {
     display: flex;
     flex-direction: column;
@@ -221,9 +221,14 @@ img {
 .mt-4 {
   margin: 0; }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   .galeria__grilla {
-    padding: 1rem; }
+    padding: 2rem 4rem; }
+  .galeria__sets--info {
+    justify-content: center;
+    align-items: center; }
+  .galeria__sets--texto {
+    text-align: center; }
   .header__menu {
     gap: 1.5rem; } }
 
@@ -241,7 +246,7 @@ img {
   .header__menu {
     gap: 0.5rem; } }
 
-@media screen and (max-width: 589px) {
+@media screen and (max-width: 576px) {
   .footer__items {
     flex-direction: column;
     align-items: center;
