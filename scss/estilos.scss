@@ -10,7 +10,6 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #432700;
-    /*     background-image: url(./img/corazoneshome.png); */
     background-color: #ffdfdf;
     display: grid;
     grid-template-areas:
@@ -37,6 +36,17 @@ img {
     justify-content: center;
 }
 
+@mixin h1 {
+    padding: 2rem 0rem 1.5rem 2rem;
+    text-align: center;
+}
+
+@mixin texto {
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+}
+
+
 
 /* --------------- HEADER ---------------- */
 
@@ -55,7 +65,6 @@ img {
     }
 
 }
-
 
 .navbar {
     &__logo {
@@ -96,18 +105,12 @@ img {
 
 /* ------------------ MAIN ------------------ */
 
-/* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffe9e9;
-    grid-area: main;
-    padding-bottom: 3rem;
-} */
+
+/* ----------- HOME ------------ */
 
 .home {
     &__titulo {
-        text-align: center;
-        padding: 1.5rem 0;
+        @include h1()
     }
 
     &__triptico {
@@ -116,9 +119,9 @@ img {
         gap: 1.7rem;
         padding: 0.5rem 3rem;
 
-        &--titulo {
+        &--subtitulo {
             text-align: center;
-            margin-top: 2.5rem;
+            padding-bottom: 1.5rem;
         }
 
         &--card {
@@ -145,16 +148,19 @@ img {
 
 }
 
+/* ----------- AMIGURUMIS ------------ */
 
-.galeria {
-    &__titulo {
-        @include flexcenter;
-        margin-top: 2.5rem;
-        padding: 1rem;
+.amigurumis {
+    &__main {
+        padding-bottom: 3rem;
     }
 
-    &__intro {
-        @include flexcenter;
+    &__titulo {
+        @include h1()
+    }
+
+    &__texto {
+        @include texto()
     }
 
     &__boton {
@@ -173,11 +179,37 @@ img {
         &--texto {
             background-color: #ffdada;
             border: none;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             text-align: center;
             margin-bottom: 4rem;
         }
     }
+
+    &__video {
+        align-items: center;
+        text-align: center;
+
+    }
+}
+
+.btn {
+    --bs-btn-border-width: 0px;
+}
+
+
+/* ----------- GALERÍA ------------ */
+
+.galeria {
+    &__titulo {
+        @include flexcenter;
+        @include h1;
+        padding-top: 3rem;
+    }
+
+    &__intro {
+        @include flexcenter;
+    }
+
 
     &__grilla {
         padding: 1rem 5rem;
@@ -185,7 +217,6 @@ img {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 1rem;
-
 
         &--img:nth-of-type(1) {
             grid-column: 1 / 5;
@@ -222,12 +253,11 @@ img {
 
     }
 
-
     &__sets {
         @include flexcenter;
         flex-wrap: wrap;
         gap: 3rem;
-        padding: 0.5rem 3rem;
+        padding: 0.5rem 3rem 2.5rem 3rem;
 
         &--titulo {
             text-align: center;
@@ -254,6 +284,10 @@ img {
             padding: 2rem;
         }
 
+        &--subtitulo {
+            text-align: center;
+        }
+
     }
 
 }
@@ -262,12 +296,68 @@ img {
     padding: 0;
 }
 
-.galeria .btn {
-    --bs-btn-border-width: 0px;
+/* ----------- NOSOTROS ------------ */
+
+.nosotros {
+    &__titulo {
+        @include h1()
+    }
+
+    &__texto {
+        @include texto()
+    }
+
+    &__imagen {
+        text-align: center;
+        padding: 2rem 1.5rem 3rem 1.5rem;
+
+        &--img {
+            width: 60%;
+        }
+    }
+
 }
 
 
-/* FOOTER */
+/* ----------- CONTACTO ------------ */
+
+.contacto {
+
+    &__titulo {
+        @include h1()
+    }
+
+    &__contenedor {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 3rem 3rem 3rem;
+    }
+
+    &__checkbox {
+        padding-top: 0.7rem;
+        padding-left: 0.25rem;
+    }
+
+    &__radio {
+        @extend .contacto__checkbox;
+    }
+
+    &__consultas {
+        @extend .contacto__checkbox;
+    }
+
+    &__boton {
+        @extend .contacto__checkbox;
+    }
+
+    &__imagen {
+        padding-right: 0.8rem;
+    }
+
+}
+
+
+/* ----------- FOOTER ------------ */
 
 .footer {
     display: flex;
@@ -390,16 +480,14 @@ img {
         gap: 0.5rem;
     }
 
+    .amigurumis__video--iframe {
+        padding: 0rem 1.5rem;
+    }
+
 }
 
 
 @media screen and (max-width: 576px) {
-    .footer__items {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0;
-    }
 
     .galeria__grilla {
         &--img:nth-of-type(1) {
@@ -425,6 +513,28 @@ img {
         &--img:nth-of-type(6) {
             grid-column: 1 / 13;
         }
+    }
+
+    .contacto {
+
+        &__contenedor {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__imagen {
+            padding: 1rem;
+        }
 
     }
+
+
+    .footer__items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 0;
+    }
+
 }
