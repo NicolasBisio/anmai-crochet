@@ -1,0 +1,57 @@
+.amigurumis {
+    &__main {
+        padding-bottom: 3rem;
+        grid-area: main;
+    }
+
+    &__titulo {
+        @include h1()
+    }
+
+    &__contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__texto {
+        @include texto()
+    }
+
+    &__boton {
+        background-color: #db8585;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 3rem;
+        margin-bottom: 0;
+        border-color: none;
+
+        &--pregunta {
+            font-size: 2rem;
+        }
+
+        &--texto {
+            background-color: #ffdada;
+            border: none;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__video {
+        display: flex;
+        justify-content: center;
+
+        &--iframe{
+            width: 45%;
+            height: 315px;
+        }
+    }
+
+
+}
+
+.btn {
+    --bs-btn-border-width: 0px;
+}

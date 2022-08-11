@@ -1,0 +1,108 @@
+@media screen and (max-width: 992px) {
+    .galeria {
+        &__grilla {
+            padding: 2rem 4rem;
+        }
+
+        &__sets--info {
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__sets--texto {
+            text-align: center;
+        }
+
+    }
+
+    .header__menu {
+        gap: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 879px) {
+    .header {
+        &__menu {
+            gap: 1.1rem;
+        }
+
+        &__nav a {
+            padding: 0rem;
+        }
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .footer {
+        &__navbar {
+            font-size: 1rem;
+        }
+
+        &__volver {
+            font-size: 0.8rem;
+        }
+    }
+
+    .header__menu {
+        gap: 0.5rem;
+    }
+
+    .amigurumis__video--iframe {
+        padding: 0rem 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .galeria__grilla {
+        &--img:nth-of-type(1) {
+            grid-column: 1 / 7;
+        }
+
+        &--img:nth-of-type(2) {
+            grid-column: 7 / 13;
+        }
+
+        &--img:nth-of-type(3) {
+            grid-column: 1 / 7;
+        }
+
+        &--img:nth-of-type(4) {
+            grid-column: 7 / 13;
+        }
+
+        &--img:nth-of-type(5) {
+            grid-column: 1 / 13;
+        }
+
+        &--img:nth-of-type(6) {
+            grid-column: 1 / 13;
+        }
+    }
+
+    .contacto {
+
+        &__contenedor {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__imagen {
+            padding: 1rem;
+        }
+
+    }
+
+
+    .footer__items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 0;
+    }
+
+}

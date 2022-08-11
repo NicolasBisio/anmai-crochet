@@ -1,0 +1,19 @@
+.nosotros {
+    &__titulo {
+        @include h1()
+    }
+
+    &__texto {
+        @include texto()
+    }
+
+    &__imagen {
+        text-align: center;
+        padding: 2rem 1.5rem 3rem 1.5rem;
+
+        &--img {
+            width: 60%;
+        }
+    }
+
+}

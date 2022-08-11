@@ -1,0 +1,49 @@
+.header {
+    @include flexcenter;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #ffdfdf;
+    background: radial-gradient(circle, #ffdfdf 75%, #ffbdbd 100%);
+    grid-area: header;
+
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.1rem;
+    }
+
+    &__nav--a {
+        font-size: 1rem;
+        font-weight: 550;
+        text-transform: uppercase;
+        color: #8c4a4a;
+
+        &:hover {
+            color: #562424;
+        }
+    }
+
+    .navbar {
+        &__logo {
+            padding-right: 8rem;
+        }
+
+        &__color {
+            background-color: none;
+        }
+
+        &-nav {
+            gap: 1rem;
+        }
+
+        &__desplegable {
+            background-color: #ffe9e9;
+        }
+    }
+
+    .nav-item:hover {
+        transition: 0.2s;
+        border-bottom: #db8585 solid 4px;
+        border-width: auto;
+    }
+}

@@ -1,0 +1,39 @@
+.home {
+    &__titulo {
+        @include h1()
+    }
+
+    &__triptico {
+        @include flexcenter;
+        flex-wrap: wrap;
+        gap: 1.7rem;
+        padding: 0.5rem 3rem;
+
+        &--subtitulo {
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+
+        &--card {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 clamp(300px, 30%, 400px)
+        }
+
+        &--imagen {
+            padding: 1rem;
+
+            &:hover {
+                padding: 0.5rem;
+            }
+        }
+
+        &--info {
+            display: flex;
+            flex-direction: column;
+            padding: 0.8rem;
+        }
+
+    }
+
+}
