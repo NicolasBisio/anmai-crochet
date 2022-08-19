@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="crochet, tejido, arte, amigurumis, deco, decoracion, manualidad, productos hechos a mano">
-    <meta name="description" content="Somos dos amigas compartiendo una misma pasión, y queremos compartirla. Te invitamos a conocer nuestras creaciones">
+    <meta name="keywords"
+        content="crochet, tejido, arte, amigurumis, deco, decoracion, manualidad, productos hechos a mano">
+    <meta name="description"
+        content="Somos dos amigas compartiendo una misma pasión, y queremos compartirla. Te invitamos a conocer nuestras creaciones">
     <link rel="shortcut icon" href="./img/favicon.png">
-    <!-- Para agregar iconos de FontAwesome -->
-    <script src="https://kit.fontawesome.com/dddbd503a2.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>Anmai Crochet</title>
 </head>
 
@@ -38,21 +38,8 @@
                         <li class="nav-item">
                             <a class="header__nav--a" href="./paginas/amigurumis.html">Amigurumis</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="header__nav--a dropdown-toggle" href="./paginas/galeria.html" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Galería
-                            </a>
-                            <ul class="dropdown-menu navbar__desplegable" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./paginas/galeria.html">Galería</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Amigurumis</a></li>
-                                <li><a class="dropdown-item" href="#">Bebés y niños</a></li>
-                                <li><a class="dropdown-item" href="#">Deco</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="header__nav--a" href="./paginas/galeria.html">Galería</a>
                         </li>
                         <li class="nav-item">
                             <a class="header__nav--a" href="./paginas/nosotros.html">Nosotros</a>
@@ -66,55 +53,19 @@
         </nav>
     </header>
 
-    <main class="container">
-        <div>
+    <main class="container-fluid home__main">
+
+        <div class="home__fondo">
+            <img class="home__fondo--img" src="./img/ovejahome2.jpg" alt="oveja_apego">
             <h1 class="home__titulo">ANMAI CROCHET</h1>
         </div>
-
-        <section class="home__triptico">
-            <article class="home__triptico--card">
-                <picture  class="home__triptico--imagen"><img src="./img/mordillohipo.jpg" alt="mordillo_hipo">
-                </picture>
-                <div class="home__triptico--info">
-                    <h3 class="home__triptico--subtitulo">Mordillo de hipo</h3>
-<!--                     <p class="home__triptico--texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Impedit ut eaque qui ducimus. Dolorum, tempora doloremque
-                        totam dignissimos possimus repudiandae dolore qua</p> -->
-                </div>
-            </article>
-
-            <article class="home__triptico--card">
-                <picture class="home__triptico--imagen"><img src="./img/pulpito.jpg" alt="pulpito">
-                </picture>
-                <div class="home__triptico--info">
-                    <h3 class="home__triptico--subtitulo">Pulpito de apego</h3>
-<!--                     <p class="home__triptico--texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Impedit ut eaque qui ducimus. Dolorum, tempora doloremque
-                        totam dignissimos possimus repudiandae dolore qua</p> -->
-                </div>
-            </article>
-
-            <article class="home__triptico--card">
-                <picture class="home__triptico--imagen"><img src="./img/hipoapego.jpg" alt="apego_hipo">
-                </picture>
-                <div class="home__triptico--info">
-                    <h3 class="home__triptico--subtitulo">Apego de Hipo</h3>
-<!--                     <p class="home__triptico--texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Impedit ut eaque qui ducimus. Dolorum, tempora doloremque
-                        totam dignissimos possimus repudiandae dolore qua</p> -->
-                </div>
-            </article>
-
-
-
-        </section>
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"></script>
     </main>
-    
+
     <footer class="footer">
         <ul class="footer__items">
             <li><a class="footer__navbar" href="./index.html">Home</a></li>
@@ -130,15 +81,21 @@
                 </a>
             </li>
             <li><a href="">
-                <i class="fa-brands fa-instagram-square"></i>
-            </a>
-        </li>
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+            </li>
         </ul>
 
         <a class="footer__volver" href="#encabezado">Volver arriba</a>
         <p class="footer__derechos">Junio de 2022 - © Todos los derechos reservados</p>
     </footer>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- Para agregar iconos de FontAwesome -->
+    <script src="https://kit.fontawesome.com/dddbd503a2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

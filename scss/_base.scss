@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #432700;
-    background-color: #ffdfdf;
+    color: $color-texto;
+    background-color: $color-primary;
     display: grid;
     grid-template-areas:
         " header "
@@ -29,5 +29,3 @@ img {
     width: 100%;
 }
 
-
-/* TITULOS */

@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 0.9rem 0;
-    background-color: #db8585;
+    background-color: $color-secondary;
     grid-area: footer;
 
     &__items {
@@ -17,30 +17,30 @@
     }
 
     & a:hover {
-        color: #ffd4d4;
+        color: $color-terciary;
     }
 
     &__navbar {
+        @include footer-color-texto;
         text-decoration: none;
         text-transform: uppercase;
-        color: #ffe9e9;
         font-size: 1.2rem;
         font-weight: 700;
     }
 
     &__volver {
+        @include footer-color-texto;
         padding: 1rem;
         list-style-type: none;
         text-align: center;
         text-decoration: none;
-        color: #ffe9e9;
         font-size: 1.2rem;
         font-weight: 580;
     }
 
     &__derechos {
+        @include footer-color-texto;
         font-size: 0.8rem;
-        color: #ffe9e9;
     }
 
     .mt-4 {
@@ -48,20 +48,20 @@
     }
 
     .fa-facebook-f {
+        @include footer-color-texto;
         font-size: 1.5rem;
-        color: #ffe9e9;
-    
+            
         &:hover {
-            color: #ffd4d4;
+            color: $color-terciary;
         }
     }
     
     .fa-instagram-square {
+        @include footer-color-texto;
         font-size: 1.5rem;
-        color: #ffe9e9;
-    
+            
         &:hover {
-            color: #ffd4d4;
+            color: $color-terciary;
         }
     
     }

@@ -1,4 +1,32 @@
 .nosotros {
+    &__intro {
+        @include flexcenter;
+        padding: 3rem 2rem;
+
+        &--img {
+            width: 33vw;
+            padding: 0rem 4rem;
+        }
+
+        &--box1,
+        &--box2 {
+            @include flexcenter;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        &--box3 {
+            @include flexcenter;
+            align-items: center;
+            align-content: center;
+        }
+
+        &--icons {
+            width: 6vw;
+        }
+    }
+
+
     &__titulo {
         @include h1()
     }
@@ -12,7 +40,7 @@
         padding: 2rem 1.5rem 3rem 1.5rem;
 
         &--img {
-            width: 60%;
+            width: 65vw;
         }
     }
 

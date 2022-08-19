@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="crochet, tejido, arte, amigurumis, galeria, creaciones, deco, decoracion, apego, regalos, bebes, niños, muñecos, peluche">
-    <meta name="description" content="Conocé nuestras creaciones. Arte en crochet para bebés y niños, y también para personalizar tus ambientes preferidos.">
+    <meta name="keywords"
+        content="crochet, tejido, arte, amigurumis, galeria, creaciones, deco, decoracion, apego, regalos, bebes, niños, muñecos, peluche">
+    <meta name="description"
+        content="Conocé nuestras creaciones. Arte en crochet para bebés y niños, y también para personalizar tus ambientes preferidos.">
     <link rel="shortcut icon" href="../img/favicon.png">
-    <!-- Para agregar iconos de FontAwesome -->
-    <script src="https://kit.fontawesome.com/dddbd503a2.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -19,11 +19,13 @@
 
 <body class="body">
 
+    <!-- HEADER -->
     <header class="header" id="encabezado">
 
         <nav class="navbar navbar-expand-md navbar__color">
             <div class="container-fluid">
-                <a class="navbar-brand navbar__logo" href="../index.html"><img src="../img/logo.png" alt="logoAnmai"></a>
+                <a class="navbar-brand navbar__logo" href="../index.html"><img src="../img/logo.png"
+                        alt="logoAnmai"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -39,21 +41,8 @@
                         <li class="nav-item">
                             <a class="header__nav--a" href="./amigurumis.html">Amigurumis</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="header__nav--a dropdown-toggle" href="./galeria.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Galería
-                            </a>
-                            <ul class="dropdown-menu navbar__desplegable" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item active" aria-current="page" href="./galeria.html">Galería</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Amigurumis</a></li>
-                                <li><a class="dropdown-item" href="#">Bebés y niños</a></li>
-                                <li><a class="dropdown-item" href="#">Deco</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="header__nav--a active" aria-current="page" href="./galeria.html">Galería</a>
                         </li>
                         <li class="nav-item">
                             <a class="header__nav--a" href="./nosotros.html">Nosotros</a>
@@ -68,119 +57,125 @@
     </header>
 
     <main class="galeria__main">
+
+        <!-- CARRUSEL -->
         <section class="container-fluid" id="maingallery">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/carrusel1.jpg" class="d-block w-100" alt="avion">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/carrusel2.jpg" class="d-block w-100" alt="muneca">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/carrusel3.jpg" class="d-block w-100" alt="love">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/carrusel4.jpg" class="d-block w-100" alt="pulpito_apego">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/carrusel5.jpg" class="d-block w-100" alt="unicornio">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/carrusel1.jpg" class="d-block w-100" alt="avion">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/carrusel2.jpg" class="d-block w-100" alt="muneca">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/carrusel3.jpg" class="d-block w-100" alt="love">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/carrusel4.jpg" class="d-block w-100" alt="pulpito_apego">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/carrusel5.jpg" class="d-block w-100" alt="unicornio">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
         </section>
 
+        <div class="container">
+            <div class="galeria__titulo">
+                <h1>Conocé nuestras creaciones</h1>
+            </div>
 
-        <div class="galeria__titulo">
-            <h1>Conocé nuestras creaciones</h1>
-        </div>
-
-        <section class="galeria__grilla">
-            <picture class="galeria__grilla--img">
-                <img src="../img/collarlactancia.jpg" alt="collar_lactancia">
-            </picture>
-            <picture class="galeria__grilla--img">
-                <img src="../img/colgantelechuza.jpg" alt="colgante_lechuza">
-            </picture>
-            <picture class="galeria__grilla--img">
-                <img src="../img/colgantecorazones.jpg" alt="colgante_corazones">
-            </picture>
-            <picture class="galeria__grilla--img">
-                <img src="../img/hiporosa.jpg" alt="apego_hiporosa">
-            </picture>
-            <picture class="galeria__grilla--img">
-                <img src="../img/muneca.jpg" alt="muñeca">
-            </picture>
-            <picture class="galeria__grilla--img">
-                <img src="../img/dino.jpg" alt="dino">
-            </picture>
-        </section>
-
-        <!-- VER DE AGREGAR ALGÚN ICON DE CORAZÓN -->
-
-        <div>
-            <h1 class="galeria__sets--titulo">Sets para los recién llegados </h1>
-        </div>
-
-        <section class="galeria__sets">
-            <article class="galeria__sets--card">
-                <picture class="galeria__sets--imagen"><img src="../img/amamantar1.jpg" alt="set_amamantar1">
+            <!-- GRILLA -->
+            <section class="galeria__grilla">
+                <picture class="galeria__grilla--img">
+                    <img src="../img/collarlactancia.jpg" alt="collar_lactancia">
                 </picture>
-<!--                 <div class="galeria__sets--info">
+                <picture class="galeria__grilla--img">
+                    <img src="../img/colgantelechuza.jpg" alt="colgante_lechuza">
+                </picture>
+                <picture class="galeria__grilla--img">
+                    <img src="../img/colgantecorazones.jpg" alt="colgante_corazones">
+                </picture>
+                <picture class="galeria__grilla--img">
+                    <img src="../img/hiporosa.jpg" alt="apego_hiporosa">
+                </picture>
+                <picture class="galeria__grilla--img">
+                    <img src="../img/muneca.jpg" alt="muñeca">
+                </picture>
+                <picture class="galeria__grilla--img">
+                    <img src="../img/dino.jpg" alt="dino">
+                </picture>
+            </section>
+
+
+            <!-- SETS AMAMANTAR -->
+            <div>
+                <h1 class="galeria__sets--titulo">Sets para los recién llegados </h1>
+            </div>
+
+            <section class="galeria__sets">
+                <article class="galeria__sets--card">
+                    <picture class="galeria__sets--imagen"><img src="../img/amamantar1.jpg" alt="set_amamantar1">
+                    </picture>
+                    <!--                 <div class="galeria__sets--info">
                     <h3 class="galeria__sets--subtitulo">Mordillo de Zorrito</h3>
                     <p class="galeria__sets--texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Impedit ut eaque qui ducimus. Dolorum, tempora doloremque
                         totam dignissimos possimus repudiandae dolore qua</p>
                 </div> -->
-            </article>
+                </article>
 
-            <article class="galeria__sets--card">
-                <picture class="galeria__sets--imagen"><img src="../img/amamantar2.jpg" alt="set_amamantar2">
-                </picture>
-<!--                 <div class="galeria__sets--info">
+                <article class="galeria__sets--card">
+                    <picture class="galeria__sets--imagen"><img src="../img/amamantar2.jpg" alt="set_amamantar2">
+                    </picture>
+                    <!--                 <div class="galeria__sets--info">
                     <h3 class="galeria__sets--subtitulo">Llavero de Corazones</h3>
                     <p class="galeria__sets--texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Impedit ut eaque qui ducimus. Dolorum, tempora doloremque
                         totam dignissimos possimus repudiandae dolore qua</p>
                 </div> -->
-            </article>
+                </article>
 
-            <article class="galeria__sets--card">
-                <picture class="galeria__sets--imagen"><img src="../img/amamantar3.jpg" alt="set_amamantar3">
-                </picture>
-<!--                 <div class="galeria__sets--info">
+                <article class="galeria__sets--card">
+                    <picture class="galeria__sets--imagen"><img src="../img/amamantar3.jpg" alt="set_amamantar3">
+                    </picture>
+                    <!--                 <div class="galeria__sets--info">
                     <h3 class="galeria__sets--subtitulo">Apego Hipo</h3>
                     <p class="galeria__sets--texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Impedit ut eaque qui ducimus. Dolorum, tempora doloremque
                         totam dignissimos possimus repudiandae dolore qua</p>
                 </div> -->
-            </article>
+                </article>
 
-        </section>
+            </section>
+        </div>
+
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <ul class="footer__items">
             <li><a class="footer__navbar" href="../index.html">Home</a></li>
@@ -190,15 +185,16 @@
             <li><a class="footer__navbar" href="./contacto.html">Contacto</a></li>
         </ul>
 
+        <!-- ÍCONOS REDES SOCIALES -->
         <ul class="mt-4 list-unstyled">
             <li><a href="">
                     <i class="fab fa-facebook-f"></i>
                 </a>
             </li>
             <li><a href="">
-                <i class="fa-brands fa-instagram-square"></i>
-            </a>
-        </li>
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+            </li>
         </ul>
 
         <a class="footer__volver" href="#encabezado">Volver arriba</a>
@@ -209,6 +205,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <!-- Para agregar iconos de FontAwesome -->
+    <script src="https://kit.fontawesome.com/dddbd503a2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

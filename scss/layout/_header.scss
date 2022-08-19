@@ -1,11 +1,10 @@
 .header {
     @include flexcenter;
     align-items: center;
-    padding: 1rem 0;
-    background-color: #ffdfdf;
-    background: radial-gradient(circle, #ffdfdf 75%, #ffbdbd 100%);
+    padding: 0;
+    background-color: #fef0f0;
     grid-area: header;
-
+    
     &__menu {
         display: flex;
         flex-wrap: wrap;
@@ -36,14 +35,11 @@
             gap: 1rem;
         }
 
-        &__desplegable {
-            background-color: #ffe9e9;
-        }
     }
 
     .nav-item:hover {
         transition: 0.2s;
-        border-bottom: #db8585 solid 4px;
+        border-bottom: $color-secondary solid 4px;
         border-width: auto;
     }
 }

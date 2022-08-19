@@ -33,7 +33,68 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .nosotros {
+        &__intro {
+            &--img {
+                width: 47vw;
+            }
+
+            &--box1,
+            &--box2 {
+                flex-direction: column;
+            }
+
+            &--icons {
+                width: 8vw;
+            }
+        }
+
+    }
+}
+
 @media screen and (max-width: 676px) {
+    .header__menu {
+        gap: 0.5rem;
+    }
+
+    .amigurumis__video--iframe {
+        padding: 0rem 1.5rem;
+    }
+
+    .nosotros__intro {
+        flex-direction: column;
+    }
+
+    .nosotros {
+        &__intro {
+
+            &--img {
+                order: 1;
+                display: flex;
+                width: 70vw;
+                padding-bottom: 2rem;
+                text-align: center;
+            }
+
+            &--box1 {
+                flex-direction: column;
+                order: 2;
+                padding: 2rem;
+            }
+
+            &--box2 {
+                flex-direction: column;
+                order: 2;
+            }
+
+            &--icons {
+                width: 19vw;
+            }
+        }
+
+    }
+
     .footer {
         &__navbar {
             font-size: 1rem;
@@ -42,14 +103,6 @@
         &__volver {
             font-size: 0.8rem;
         }
-    }
-
-    .header__menu {
-        gap: 0.5rem;
-    }
-
-    .amigurumis__video--iframe {
-        padding: 0rem 1.5rem;
     }
 
 }
