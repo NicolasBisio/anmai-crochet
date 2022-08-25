@@ -1,11 +1,6 @@
 .amigurumis {
     &__main {
         padding-bottom: 3rem;
-        grid-area: main;
-    }
-
-    &__titulo {
-        @include h1()
     }
 
     &__contenedor{
@@ -15,6 +10,14 @@
 
     &__texto {
         @include texto()
+    }
+
+    &__contenedor strong {
+        font-weight: 100;
+    }
+
+    &__contenedor span {
+        font-weight: 600;
     }
 
     &__boton {

@@ -1,9 +1,5 @@
 .contacto {
 
-    &__titulo {
-        @include h1()
-    }
-
     &__contenedor {
         display: flex;
         justify-content: space-around;

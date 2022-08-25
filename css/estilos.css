@@ -6,9 +6,12 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #5f3700;
-  background-color: #ffffff;
-  display: grid;
-  grid-template-areas: " header " " main " " footer "; }
+  background-color: #ffffff; }
+
+h1 {
+  padding: 3rem 0rem 1.5rem 2rem;
+  text-align: center;
+  font-size: 3.5rem; }
 
 ul {
   list-style-type: none; }
@@ -18,6 +21,9 @@ a {
 
 img {
   width: 100%; }
+
+p {
+  margin: 0; }
 
 .header {
   display: flex;
@@ -137,20 +143,22 @@ img {
     padding: 0.8rem; }
 
 .amigurumis__main {
-  padding-bottom: 3rem;
-  grid-area: main; }
-
-.amigurumis__titulo {
-  padding: 2rem 0rem 1.5rem 2rem;
-  text-align: center; }
+  padding-bottom: 3rem; }
 
 .amigurumis__contenedor {
   display: flex;
   flex-direction: column; }
 
 .amigurumis__texto {
-  font-size: 1.2rem;
-  padding: 0.5rem 2rem; }
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  text-align: justify; }
+
+.amigurumis__contenedor strong {
+  font-weight: 100; }
+
+.amigurumis__contenedor span {
+  font-weight: 600; }
 
 .amigurumis__boton {
   background-color: #db8585;
@@ -182,8 +190,6 @@ img {
 .galeria__titulo {
   display: flex;
   justify-content: center;
-  padding: 2rem 0rem 1.5rem 2rem;
-  text-align: center;
   padding-top: 3rem; }
 
 .galeria__intro {
@@ -218,7 +224,7 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
   padding: 0.5rem 3rem 2.5rem 3rem; }
   .galeria__sets--titulo {
     text-align: center;
@@ -233,10 +239,10 @@ img {
       padding: 0.9rem; }
   .galeria__sets--info {
     display: flex;
-    flex-direction: column;
-    padding: 2rem; }
+    flex-direction: column; }
   .galeria__sets--subtitulo {
-    text-align: center; }
+    text-align: center;
+    font-size: 1.8rem; }
 
 #maingallery {
   padding: 0; }
@@ -247,6 +253,7 @@ img {
   padding: 3rem 2rem; }
   .nosotros__intro--img {
     width: 33vw;
+    min-width: 330px;
     padding: 0rem 4rem; }
   .nosotros__intro--box1, .nosotros__intro--box2 {
     display: flex;
@@ -261,23 +268,70 @@ img {
   .nosotros__intro--icons {
     width: 6vw; }
 
-.nosotros__titulo {
-  padding: 2rem 0rem 1.5rem 2rem;
-  text-align: center; }
-
 .nosotros__texto {
-  font-size: 1.2rem;
-  padding: 0.5rem 2rem; }
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  text-align: justify; }
+
+.nosotros__historia--box1 {
+  display: flex;
+  padding: 2rem 10rem; }
+
+.nosotros__historia--box2 {
+  display: flex;
+  padding: 2rem 10rem; }
+
+.nosotros__historia--box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 12rem; }
+
+.nosotros__historia--img {
+  width: 40%; }
+
+.nosotros__historia--img3 {
+  width: 90%;
+  padding: 3rem 0rem; }
+
+.nosotros__historia--img4 {
+  width: 45%;
+  padding-top: 6rem; }
+
+.nosotros__historia--contenedor1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 4rem;
+  align-items: center;
+  justify-content: center; }
+
+.nosotros__historia--contenedor2 {
+  display: flex;
+  width: 60%;
+  padding-left: 4rem;
+  align-items: center; }
+
+.nosotros__historia--texto1 {
+  font-size: 2rem;
+  text-align: right;
+  padding-bottom: 1rem; }
+
+.nosotros__historia--texto2 {
+  font-size: 2rem;
+  text-align: left; }
+
+.nosotros__historia--texto3 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding-top: 3rem; }
 
 .nosotros__imagen {
   text-align: center;
   padding: 2rem 1.5rem 3rem 1.5rem; }
   .nosotros__imagen--img {
     width: 65vw; }
-
-.contacto__titulo {
-  padding: 2rem 0rem 1.5rem 2rem;
-  text-align: center; }
 
 .contacto__contenedor {
   display: flex;
@@ -292,6 +346,8 @@ img {
   padding-right: 0.8rem; }
 
 @media screen and (max-width: 992px) {
+  .header__menu {
+    gap: 1.5rem; }
   .galeria__grilla {
     padding: 2rem 4rem; }
   .galeria__sets--info {
@@ -299,22 +355,48 @@ img {
     align-items: center; }
   .galeria__sets--texto {
     text-align: center; }
-  .header__menu {
-    gap: 1.5rem; } }
+  .galeria__sets--subtitulo {
+    font-size: 2.5rem; }
+  .nosotros__historia--box1 {
+    padding: 2rem 6rem; }
+  .nosotros__historia--box2 {
+    padding: 2rem 6rem; }
+  .nosotros__historia--box3 {
+    padding: 2rem 8rem; }
+  .nosotros__historia--texto1 {
+    font-size: 1.6rem; }
+  .nosotros__historia--texto2 {
+    font-size: 1.6rem; }
+  .nosotros__historia--texto3 {
+    font-size: 1.8rem;
+    padding-top: 1.5rem; } }
 
 @media screen and (max-width: 879px) {
   .header__menu {
     gap: 1.1rem; }
   .header__nav a {
-    padding: 0rem; } }
-
-@media screen and (max-width: 767px) {
+    padding: 0rem; }
   .nosotros__intro--img {
-    width: 47vw; }
+    width: 47vw;
+    min-width: 350px; }
   .nosotros__intro--box1, .nosotros__intro--box2 {
     flex-direction: column; }
   .nosotros__intro--icons {
-    width: 8vw; } }
+    width: 8vw; }
+  .nosotros__historia--box1 {
+    padding: 1rem 4rem; }
+  .nosotros__historia--box2 {
+    padding: 1rem 4rem; }
+  .nosotros__historia--box3 {
+    padding: 1rem 6rem; }
+  .nosotros__historia--contenedor1 {
+    padding-right: 2rem; }
+  .nosotros__historia--contenedor2 {
+    padding-left: 2rem; } }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3rem; } }
 
 @media screen and (max-width: 676px) {
   .header__menu {
@@ -338,6 +420,29 @@ img {
     order: 2; }
   .nosotros__intro--icons {
     width: 19vw; }
+  .nosotros__historia--box1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 2rem; }
+  .nosotros__historia--box2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0; }
+  .nosotros__historia--contenedor1 {
+    padding: 0rem; }
+  .nosotros__historia--contenedor2 {
+    padding: 0rem; }
+  .nosotros__historia--img {
+    width: 80%;
+    padding: 2rem 0rem; }
+  .nosotros__historia--img3 {
+    padding: 1.5rem 0rem; }
+  .nosotros__historia--texto1 {
+    text-align: center; }
+  .nosotros__historia--texto2 {
+    text-align: center;
+    padding: 0rem 0rem 3rem 0rem; }
   .footer__navbar {
     font-size: 1rem; }
   .footer__volver {

@@ -1,23 +1,60 @@
 @media screen and (max-width: 992px) {
+    .header__menu {
+        gap: 1.5rem;
+    }
+
     .galeria {
         &__grilla {
             padding: 2rem 4rem;
         }
 
-        &__sets--info {
-            justify-content: center;
-            align-items: center;
+        &__sets {
+            &--info {
+                justify-content: center;
+                align-items: center;
+            }
+
+            &--texto {
+                text-align: center;
+            }
+
+            &--subtitulo {
+                font-size: 2.5rem;
+            }
         }
 
-        &__sets--texto {
-            text-align: center;
-        }
 
     }
 
-    .header__menu {
-        gap: 1.5rem;
+    .nosotros__historia {
+        &--box1 {
+            padding: 2rem 6rem;
+        }
+
+        &--box2 {
+            padding: 2rem 6rem;
+        }
+
+        &--box3 {
+            padding: 2rem 8rem;
+        }
+
+
+        &--texto1 {
+            font-size: 1.6rem;
+        }
+
+        &--texto2 {
+            font-size: 1.6rem;
+        }
+
+        &--texto3 {
+            font-size: 1.8rem;
+            padding-top: 1.5rem;
+        }
     }
+
+
 
 }
 
@@ -31,13 +68,12 @@
             padding: 0rem;
         }
     }
-}
 
-@media screen and (max-width: 767px) {
     .nosotros {
         &__intro {
             &--img {
                 width: 47vw;
+                min-width: 350px;
             }
 
             &--box1,
@@ -50,6 +86,35 @@
             }
         }
 
+        &__historia {
+            &--box1 {
+                padding: 1rem 4rem;
+            }
+
+            &--box2 {
+                padding: 1rem 4rem;
+            }
+
+            &--box3 {
+                padding: 1rem 6rem;
+            }
+
+            &--contenedor1 {
+                padding-right: 2rem;
+            }
+
+            &--contenedor2 {
+                padding-left: 2rem;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
     }
 }
 
@@ -68,7 +133,6 @@
 
     .nosotros {
         &__intro {
-
             &--img {
                 order: 1;
                 display: flex;
@@ -91,6 +155,48 @@
             &--icons {
                 width: 19vw;
             }
+        }
+
+        &__historia {
+            &--box1 {
+                flex-direction: column-reverse;
+                align-items: center;
+                padding: 0;
+                padding-bottom: 2rem;
+            }
+
+            &--box2 {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            &--contenedor1 {
+                padding: 0rem;
+            }
+
+            &--contenedor2 {
+                padding: 0rem;
+            }
+
+            &--img {
+                width: 80%;
+                padding: 2rem 0rem;
+            }
+
+            &--img3 {
+                padding: 1.5rem 0rem;
+            }
+
+            &--texto1 {
+                text-align: center;
+            }
+
+            &--texto2 {
+                text-align: center;
+                padding: 0rem 0rem 3rem 0rem;
+            }
+
         }
 
     }

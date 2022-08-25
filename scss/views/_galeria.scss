@@ -1,7 +1,6 @@
 .galeria {
     &__titulo {
         @include flexcenter;
-        @include h1;
         padding-top: 3rem;
     }
 
@@ -55,7 +54,7 @@
     &__sets {
         @include flexcenter;
         flex-wrap: wrap;
-        gap: 3rem;
+        gap: 2rem;
         padding: 0.5rem 3rem 2.5rem 3rem;
 
         &--titulo {
@@ -80,11 +79,11 @@
         &--info {
             display: flex;
             flex-direction: column;
-            padding: 2rem;
         }
 
         &--subtitulo {
             text-align: center;
+            font-size: 1.8rem;
         }
 
     }
