@@ -99,6 +99,18 @@ p {
     .footer .fa-instagram-square:hover {
       color: #ffd4d4; }
 
+.boton {
+  padding-top: 3rem;
+  text-align: center; }
+
+.btn {
+  background-color: #db8585;
+  color: #ffffff; }
+
+.btn:hover {
+  background-color: #ffd4d4;
+  color: #db8585; }
+
 .home__main {
   padding: 0; }
 
