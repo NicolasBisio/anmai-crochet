@@ -1,15 +1,23 @@
-.boton{
+.boton {
     padding-top: 3rem;
     text-align: center;
 }
 
-.btn{
+.btn {
     background-color: $color-secondary;
     color: $color-primary;
 }
 
-.btn:hover{
-    background-color: $color-terciary;
-    color: $color-secondary ;
-}
 
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus {
+    background-color: $color-terciary;
+    color: $color-secondary;
+    box-shadow: none;
+}

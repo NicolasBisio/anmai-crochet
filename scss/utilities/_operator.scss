@@ -12,3 +12,9 @@
 @mixin footer-color-texto {
     color: #ffe9e9;
 }
+
+@mixin h1 {
+    padding: 3rem 0rem 1.5rem 2rem;
+    text-align: center;
+    font-size: 3.5rem;
+}

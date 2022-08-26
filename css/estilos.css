@@ -107,9 +107,17 @@ p {
   background-color: #db8585;
   color: #ffffff; }
 
-.btn:hover {
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus {
   background-color: #ffd4d4;
-  color: #db8585; }
+  color: #db8585;
+  box-shadow: none; }
 
 .home__main {
   padding: 0; }
@@ -121,7 +129,8 @@ p {
   background-color: rgba(255, 255, 255, 0.55);
   top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  padding: 0; }
 
 .home__fondo {
   background-size: cover;
@@ -132,27 +141,11 @@ p {
   .home__fondo--img {
     opacity: 60%; }
 
-.home__triptico {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.7rem;
-  padding: 0.5rem 3rem; }
-  .home__triptico--subtitulo {
-    text-align: center;
-    padding-bottom: 1.5rem; }
-  .home__triptico--card {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 clamp(300px, 30%, 400px); }
-  .home__triptico--imagen {
-    padding: 1rem; }
-    .home__triptico--imagen:hover {
-      padding: 0.5rem; }
-  .home__triptico--info {
-    display: flex;
-    flex-direction: column;
-    padding: 0.8rem; }
+.home__boton {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .amigurumis__main {
   padding-bottom: 3rem; }
@@ -208,8 +201,17 @@ p {
   display: flex;
   justify-content: center; }
 
+.galeria__contenedor {
+  display: flex;
+  flex-direction: column; }
+
+.galeria__texto {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  text-align: justify; }
+
 .galeria__grilla {
-  padding: 1rem 5rem;
+  padding: 4rem 5rem 1rem 5rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -239,6 +241,9 @@ p {
   gap: 2rem;
   padding: 0.5rem 3rem 2.5rem 3rem; }
   .galeria__sets--titulo {
+    padding: 3rem 0rem 1.5rem 2rem;
+    text-align: center;
+    font-size: 3.5rem;
     text-align: center;
     margin-top: 2rem; }
   .galeria__sets--card {
@@ -347,15 +352,42 @@ p {
 
 .contacto__contenedor {
   display: flex;
+  flex-direction: column; }
+
+.contacto__texto {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  text-align: justify; }
+
+.contacto__contenedorform {
+  display: flex;
   justify-content: space-around;
-  padding: 1rem 3rem 3rem 3rem; }
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 3rem 3rem 3rem; }
+
+.contacto__consigna {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem; }
 
 .contacto__checkbox, .contacto__radio, .contacto__consultas, .contacto__boton {
-  padding-top: 0.7rem;
+  padding-top: 2rem;
   padding-left: 0.25rem; }
 
 .contacto__imagen {
   padding-right: 0.8rem; }
+
+.form-control:hover,
+.form-control:focus,
+.form-control:active {
+  box-shadow: none;
+  border-color: #db8585; }
+
+.form-select:hover,
+.form-select:focus,
+.form-select:active {
+  box-shadow: none;
+  border-color: #db8585; }
 
 @media screen and (max-width: 992px) {
   .header__menu {
@@ -408,7 +440,21 @@ p {
 
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .galeria__grilla--img:nth-of-type(1) {
+    grid-column: 1 / 7; }
+  .galeria__grilla--img:nth-of-type(2) {
+    grid-column: 7 / 13; }
+  .galeria__grilla--img:nth-of-type(3) {
+    grid-column: 1 / 7; }
+  .galeria__grilla--img:nth-of-type(4) {
+    grid-column: 7 / 13; }
+  .galeria__grilla--img:nth-of-type(5) {
+    grid-column: 1 / 13; }
+  .galeria__grilla--img:nth-of-type(6) {
+    grid-column: 1 / 13; }
+  .galeria__sets--subtitulo {
+    font-size: 1.8rem; } }
 
 @media screen and (max-width: 676px) {
   .header__menu {
@@ -461,22 +507,8 @@ p {
     font-size: 0.8rem; } }
 
 @media screen and (max-width: 576px) {
-  .galeria__grilla--img:nth-of-type(1) {
-    grid-column: 1 / 7; }
-  .galeria__grilla--img:nth-of-type(2) {
-    grid-column: 7 / 13; }
-  .galeria__grilla--img:nth-of-type(3) {
-    grid-column: 1 / 7; }
-  .galeria__grilla--img:nth-of-type(4) {
-    grid-column: 7 / 13; }
-  .galeria__grilla--img:nth-of-type(5) {
-    grid-column: 1 / 13; }
-  .galeria__grilla--img:nth-of-type(6) {
-    grid-column: 1 / 13; }
   .contacto__contenedor {
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
+    flex-direction: column; }
   .contacto__imagen {
     padding: 1rem; }
   .footer__items {

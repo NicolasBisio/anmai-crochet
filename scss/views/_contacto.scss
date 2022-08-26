@@ -1,13 +1,28 @@
 .contacto {
-
     &__contenedor {
         display: flex;
+        flex-direction: column;
+    }
+
+    &__texto {
+        @include texto()
+    }
+
+    &__contenedorform {
+        display: flex;
         justify-content: space-around;
-        padding: 1rem 3rem 3rem 3rem;
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem 3rem 3rem 3rem;
+    }
+
+    &__consigna {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
     }
 
     &__checkbox {
-        padding-top: 0.7rem;
+        padding-top: 2rem;
         padding-left: 0.25rem;
     }
 
@@ -28,3 +43,18 @@
     }
 
 }
+
+.form-control:hover,
+.form-control:focus,
+.form-control:active {
+    box-shadow: none;
+    border-color: $color-secondary;
+}
+
+.form-select:hover,
+.form-select:focus,
+.form-select:active {
+    box-shadow: none;
+    border-color: $color-secondary;
+}
+

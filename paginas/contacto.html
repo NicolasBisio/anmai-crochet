@@ -55,11 +55,18 @@
         </nav>
     </header>
 
+    <!-- MAIN -->
     <main class="contacto__fondo container">
         <h1 class="contacto__titulo">Dejanos conocerte un poco más...</h1>
 
+        <div class="contacto__contenedor container">
+            <p class="contacto__texto">Nos encanta que sepas de nosotras, y que puedas apreciar nuestras creaciones. Pero para nosotras también es muy especial conocerlos a ustedes.
+                Te pedimos que no dejes de escribirnos, de hacernos algún comentario o sugerencia para mejorar, de contarnos qué es lo que te gustó más.
+            </p>
+        </div>
+
         <!-- FORMULARIO -->
-        <section class="contacto__contenedor">
+        <section class="contacto__contenedorform">
             <div class="container-fluid">
                 <div class="form-floating mb-2">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
@@ -95,7 +102,7 @@
                 </div>
 
                 <div class="contacto__checkbox">
-                    <label for="articulos">Artículos de su interés</label>
+                    <label for="articulos" class="contacto__consigna">Artículos de su interés</label>
                     <br>
                     <input type="checkbox" name="cbox1"> Amigurumis
                     <input type="checkbox" name="cbox2"> Deco y hogar
@@ -103,14 +110,14 @@
                     <input type="checkbox" name="cbox3"> Adultos
                 </div>
                 <div class="contacto__radio">
-                    <label for="experiencia">¿Tiene experiencia tejiendo a crochet?</label>
+                    <label for="experiencia" class="contacto__consigna">¿Tiene experiencia tejiendo a crochet?</label>
                     <br>
                     <input type="radio" name="experiencia"> Avanzada
                     <input type="radio" name="experiencia"> Básica
                     <input type="radio" name="experiencia"> Ninguna
                 </div>
                 <div class="contacto__consultas">
-                    <label for="consultas">Consultas</label>
+                    <label for="consultas" class="contacto__consigna">Consultas</label>
                     <br>
                     <textarea name="consultas" id="consultas" cols="55" rows="5" maxlength="10"></textarea>
                 </div>
