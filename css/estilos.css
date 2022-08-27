@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'PT Sans', serif;
   color: #5f3700;
   background-color: #ffffff; }
 
@@ -26,6 +26,7 @@ p {
   margin: 0; }
 
 .header {
+  font-weight: 800;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,8 +137,7 @@ p {
   background-size: cover;
   position: relative;
   display: inline-block;
-  text-align: center;
-  min-height: 50vh; }
+  text-align: center; }
   .home__fondo--img {
     opacity: 60%; }
 
@@ -183,11 +183,18 @@ p {
     margin-bottom: 4rem; }
 
 .amigurumis__video {
-  display: flex;
-  justify-content: center; }
+  padding: 0rem 7rem; }
+  .amigurumis__video--contenedor {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden; }
   .amigurumis__video--iframe {
-    width: 45%;
-    height: 315px; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 .btn {
   --bs-btn-border-width: 0px; }
@@ -440,7 +447,8 @@ p {
 
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 3rem; }
+    font-size: 2.5rem;
+    font-weight: 600; }
   .galeria__grilla--img:nth-of-type(1) {
     grid-column: 1 / 7; }
   .galeria__grilla--img:nth-of-type(2) {
@@ -459,8 +467,18 @@ p {
 @media screen and (max-width: 676px) {
   .header__menu {
     gap: 0.5rem; }
-  .amigurumis__video--iframe {
-    padding: 0rem 1.5rem; }
+  h1 {
+    font-size: 2rem;
+    font-weight: 600; }
+  .texto {
+    font-size: 1.2rem; }
+  .home__boton {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .amigurumis__video {
+    padding: 0rem 4rem; }
   .nosotros__intro {
     flex-direction: column; }
   .nosotros__intro--img {
@@ -507,6 +525,11 @@ p {
     font-size: 0.8rem; } }
 
 @media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 600; }
+  .texto {
+    font-size: 1rem; }
   .contacto__contenedor {
     flex-direction: column; }
   .contacto__imagen {

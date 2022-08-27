@@ -111,7 +111,8 @@
 
 @media screen and (max-width: 767px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        font-weight: 600;
     }
 
     .galeria {
@@ -154,8 +155,24 @@
         gap: 0.5rem;
     }
 
-    .amigurumis__video--iframe {
-        padding: 0rem 1.5rem;
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .texto{
+        font-size: 1.2rem;
+    }
+
+    .home__boton{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }        
+
+    .amigurumis__video {
+        padding: 0rem 4rem;
     }
 
     .nosotros__intro {
@@ -247,8 +264,16 @@
 
 @media screen and (max-width: 576px) {
 
-    .contacto {
+    h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
 
+    .texto{
+        font-size: 1rem;
+    }
+
+    .contacto {
         &__contenedor {
             flex-direction: column;
         }
